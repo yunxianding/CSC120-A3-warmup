@@ -29,7 +29,7 @@ public class ConversationIntro {
   
   /** Returns the square of its input */
   public int squared(int n) {
-    return n * (1/2);
+    return n * n;
   }
 
   /*
@@ -146,7 +146,7 @@ public class ConversationIntro {
   /** Returns an array of squares from 1 to n*n */
   public static int[] squares(int n) {
     int[] arr = new int[n]; // allocate space for the array
-    for (int i = 1; i < n * n; i++) {
+    for (int i = 0; i < n; i++) {
       arr[i] = (i+1) * (i+1);
     }
     return arr;
